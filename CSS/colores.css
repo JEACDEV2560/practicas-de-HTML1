@@ -1,0 +1,11 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 93%, 44%);
+    margin: 20px,150px, 20px, 150px;
+    text-align: center;
+    font-family: sans-serif;
+    color:hsl(210, 93%, 44%);
+    font-weight: bold;
+    text-transform: uppercase;
+}
