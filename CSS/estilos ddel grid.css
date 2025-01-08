@@ -1,0 +1,25 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to left ,transparent,black, green);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 3px solid #900a;
+}
+
+body{
+    background: red;
+    margin: 0;
+    
+
+}
+
+h1{
+    margin: 0;;
+    color:#fff;
+ text-align: center;
+ padding: 20px;
+ font-family: sans-serif;
+
+}
