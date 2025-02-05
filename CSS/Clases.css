@@ -1,0 +1,28 @@
+img{
+    width: 100px;
+}
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+
+}
+
+h1:hover{
+    background-color: #999;
+    color: #000;
+}
+
+h1:active{
+    background-color: #999;
+    color: #fff;
+}
+li:first-child{
+    color: #f00;
+}
+li:last-child{
+    color: #48e;
+}
+li:nth-child(2n){
+    color: #0f0;
+}   

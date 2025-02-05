@@ -1,0 +1,13 @@
+
+
+
+h1{
+    color: red inherit;
+    font-family: sans-serif;
+
+}
+
+div{
+    color: blue;
+    width: 50%;
+}

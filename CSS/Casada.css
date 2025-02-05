@@ -1,0 +1,13 @@
+#titulo{
+    color: green;
+    font-family: sans-serif;
+}
+
+.titulo{
+    color: red;
+    font-family: sans-serif;
+}
+
+h1{
+    color: royalblue !important;
+}
