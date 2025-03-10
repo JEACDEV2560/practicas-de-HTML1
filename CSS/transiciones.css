@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    transition: cubic-bezier(.17,.67,.83,.67);
+    transition-property: color;
+    transition-duration: 2s;
+    transition-property: all;
+    position: relative;
+}
+
+.box:hover{
+    background-color: blue;
+    color: white;
+}
+
+body:hover .box{
+    background-color: green;
+    color: white;
+    left: 400px;
+}
