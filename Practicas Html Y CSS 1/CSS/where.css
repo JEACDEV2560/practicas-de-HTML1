@@ -1,0 +1,77 @@
+section.elemento1, 
+section.elemento2 ,
+section .elemento3 {
+    color: red;
+    text-transform: uppercase;
+}
+
+
+section :where(.elemento1, .elemento2, .elemento3, .elemento4) {
+    color: blue;
+}
+
+section:has(.elemento1, .elemento2, .elemento3, .elemento4) {
+    background-color: #000;
+    color: #fff;
+}
+
+ul:has( + div) {
+    color: green;
+    
+}
+label{
+    font-weight: bold;
+}
+label:has(input:valid){
+    color: green;
+}
+
+
+
+label:has(input:invalid) {
+    color: red;
+}
+
+div{
+    padding: 20px;
+
+}
+
+h1::first-letter {
+    font-size: 3em;
+    color: red;
+    letter-spacing: -8px;
+}
+
+h1::first-line {
+    font-weight: bold;
+    color: blue;
+   
+}
+
+div::selection {
+    background-color: #e71212;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #0abd13;
+    background-color: #000;
+}
+
+li::marker {
+    color: #dd1212;
+   
+}
+
+li::before {
+    content: "👉 ahi va el texto";
+    color: #0abd13;
+    margin-right: 10px;
+}
+
+li::after {
+    content: "👈 Ahi se Enumeran los Elementos";
+    color: #0abd13;
+    margin-left: 10px;
+}

@@ -1,0 +1,335 @@
+
+:root{
+    --color-1: #e2eaff;
+    --text-color:  #103c7b ;
+    --accent-color: #006aff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'montserrat', sans-serif;
+    background-color: var(--color-1);
+    color: var(--text-color);
+}
+
+nav{
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+nav  a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover{
+    background-color: var(--accent-color);
+}
+
+ nav .home-link{
+    margin-right: auto;
+    justify-content: flex-end;
+}
+
+nav svg{
+    fill: var(--text-color)
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+   
+    display: none;
+
+}
+
+svg{
+    width: 32px;
+}
+
+/*----- header quires -----*/
+@media (max-width: 500px){
+   .links-container{
+       flex-direction: column;
+       align-items: flex-start;
+
+       position: fixed;
+       top:0;
+       right: -100%;
+       z-index: 10;
+       width: 300px;
+       background-color: var(--color-1);
+       box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+    transition: 1.25s ease-out;
+    }
+   nav a{
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+
+   }
+   .open-sidebar-button, .close-sidebar-button{
+    padding: 20px;   
+    display: block;
+   }
+   #sidebar-active:checked ~ .links-container{
+       right: 0;
+   }
+   
+   #sidebar-active:checked ~ #overlay{
+       background-color:#48e;
+       height: 100%;
+       width: 100%;
+       position: fixed;
+       top: 0;
+       left: 0;
+   }
+}
+
+
+
+
+/* -----------Profile Section ------------------------- */
+.profile {
+    container-name: profile;
+    container-type: inline-size;
+}
+.profile__wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    max-width: 1400px;
+}
+.profile__data_-container{
+    width: 600px;
+    padding: 12px;
+}
+.profile__img-container{
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.profile__img{
+    max-width: 100%;
+    width: 600px;
+}
+h1{
+    color:#26a;
+}
+/*---- Skills Section ----*/
+
+.profile__skill-container{
+    color: #26a;
+}
+.profile__skill{
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    max-width: 600px;
+    margin-left: 0;
+    align-items: center;
+}
+.profile__skill-name{
+    color: #48e;
+}
+.load-bar{
+    border: 2px solid #26a;
+    border-radius: 8px;
+    color:#fff;
+    padding: 2px;
+    font-size: 12px;
+    width: 80%;
+    margin: 4px;
+    margin-left: 0;
+}
+.load-bar__bar{
+    background-color: #48e;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+.bar-80{
+    width: 80%;
+}
+.bar-60{
+    width: 60%;
+
+}
+.bar-70{
+    width: 70%;
+}
+
+.bar-85{
+    width: 85%;
+}
+/*------- Footter -----*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-1);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/*----------------------- Profile Queries -------------------------*/
+
+
+@container profile (min-width:720px){
+    .profile__wrapper{
+        flex-direction: row ;
+        padding: 20px;
+        background-color: transparent;
+        height: 90vh;
+        margin: auto;
+    }
+    .profile__data-container{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 0px 25px 25px 0;
+        box-shadow: 0px 0px 9px #0002;
+    }
+    h1{
+        margin-top: 0;
+        font-size: 4rem;
+        text-wrap: balance;
+
+    }
+    .profile__data{
+        max-width: 620px;
+        
+    }
+    .profile__img-container{
+        max-height: initial;
+    }
+    .profile__img{
+    height: 100% ;
+    object-fit: cover;
+    width: 620px;
+
+    }
+}
+
+/*--------------------------- Porfolio Section ---------------------*/
+.portafolio{
+    background-color: #18233f;
+    color:#fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    container-name: portafolio;
+    container-type: inline-size;
+    justify-content: space-evenly;
+}
+.portafolio-title{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.portafolio__project-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap:12px;
+    padding: 12px;
+    min-height:  0vh;
+}
+
+.portafolio__project{
+    background-image: linear-gradient(#0006,#0006), url('/dalto small.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+   
+}
+.portafolio__project:hover{
+    opacity: .7;
+    outline:2px solid #fff6;
+}
+
+/*---------------------------Porfolio Queries-------------------------*/
+@container portafolio (min-width: 56.25rem){
+    .portafolio__project-container{
+        grid-template-columns: repeat( auto-fill, minmax(500px, 1fr));
+        
+    }
+    .portafolio__project:first-child{
+    grid-column: span 2;
+
+    }
+    .portafolio__project:nth-child(6){
+        grid-column: span 2;
+    }
+}
+
+@container portafolio (min-width: 81rem){
+    .portafolio__project-container{
+        grid-template-columns: repeat( auto-fill, minmax(300px, 1fr));
+        grid-row: span 2;
+    }
+    .portafolio__project:first-child{
+    grid-column: span 2;
+
+    }
+    .portafolio__project:nth-child(6){
+        grid-column: span 2;
+    }
+}
+
+/*-------------------------------------Contact Section---------------------------*/
+
+.form{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form__form{
+    flex: 1;
+
+}
+input, textarea{
+    width: 100%;
+    padding: 9px 6px;
+    font-size: 16px;
+    margin: 4px;
+    border: none;
+    box-shadow: 2px 2px 4px  #0003;
+}
+

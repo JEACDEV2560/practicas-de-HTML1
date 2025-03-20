@@ -1,0 +1,20 @@
+img[src$="dato.jpg"] {
+    width: 200px;
+}
+
+/* Selectores Decendientes */
+
+ul li {
+    color: #667;
+}
+
+/* Selectores por hijos  */
+
+li > em {
+    color: #f00;
+}
+
+/* Selectores Ayacentes */
+h1 + p +p {
+    color: #2035aa;
+}

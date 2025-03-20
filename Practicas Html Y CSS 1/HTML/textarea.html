@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/textarea.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <h2>Formulario de Contacto</h2>
+        <fieldset >
+            <legend>Infomacion Basica </legend>
+        
+        <div class="form_input">
+            <label for="">Nombre</label>
+            <input type="text" placeholder="Nombre completo">
+
+        </div>
+        <div class="form_input"> 
+            <label for="">Correo electronico</label>
+            <input type="email" placeholder="Correo electronico">
+        </div>
+    </fieldset>
+        <!------- Select & OPTION -------->
+        <div class="form_input">Tipo usuario</label>
+            <select name="type-of-user" id="">
+                <option value="user1">Seguidor</option>
+                <option value="user2">Empresa</option>
+                <option value="user3">Amigo</option>
+            </select>
+        </div>
+        <div class="form_input">
+            <textarea maxlength="280" name="" id="" cols="30" rows="10" placeholder="Mensaje" ></textarea>
+        </div>
+        <div class="form_input">
+            <label for="">Acepto Terminos y <a href="terms.html">Codiciones</a></label>
+            <input type="checkbox" name="terms" id="">
+            <input type="submit" value="Enviar">
+        </div>
+        </form>
+</body>
+</html>
