@@ -7,150 +7,20 @@
     <title>WebSite </title>
 </head>
 <body>
-   <header>
-    <nav>
-        <input type="checkbox" id="sidebar-active">
-       <div class="open-sidebar-button">
-        <label for="sidebar-active" >
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 50 50">
-                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
-                </svg>
-        </label>
-       </div>
-        <label  id="ovelay" for="sidebar-active"></label>
-        <div class="links-container">
-            <label for="sidebar-active" class="close-sidebar-button"> 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
-            </label>
-                
-            <a href="#" class="home-link">Home</a></li>
-            <a href="#">About</a>
-            <a href="#">Porfolio</a>
-            <a href="#">Contact</a>
-        </div>
+<header class="header">
+    <input type="checkbox" class="header__checkbox" id="open-menu">
+    <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+    <div class="header__logo-container">
+        <img class="header__logo" src="JEACDEV-logo.png" alt="">
+    </div>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav_item"><a  href="#">About</a></li>
+            <li class="header__nav_item"><a  href="#">Porfolio</a></li>
+            <li class="header__nav_item"><a  href="#">Contact</a></li>
+        </ul>
     </nav>
-   </header>
-   <!-------------------------Profile section------------------------>
-   <main class="profile">
-    <div class="profile__wrapper">
-        <div class="profile__img-container">
-            <img src="/dalto small.jpg" alt="" class="profile__img">
-        </div>
-        <div class="profile__data-container">
-            <div class="profile__data">
-                <div class="profile__descripcion">
-                    <h1>¿Quien es Lucas Dalto?</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde modi, ipsam possimus beatae provident necessitatibus, at magnam ad numquam fugiat aspernatur? Unde id laborum ea, cupiditate recusandae alias ipsa!
-                    </p>
-                </div>
-                <div class="profile__skill-container">
-                    <h2>Skills</h2>
-                    <ul>
-                    <!----------HTML--------------------->
-                        <li class="profile__skill">
-                            <div class="load-bar">
-                                <div class="load-bar__bar bar-80">80%</div>
-                            </div>
-                            <span class="profile__skill-name">HTML</span>
-                        </li>
-                        <!----------CSS------------>
-                        <li class="profile__skill">
-                            <div class="load-bar">
-                                <div class="load-bar__bar bar-60">60%</div>
-                            </div>
-                            <span class="profile__skill-name">CSS</span>
-                        </li>
-                        <!----------JS---------------------->
-                        <li class="profile__skill">
-                            <div class="load-bar">
-                                <div class="load-bar__bar bar-70">70%</div>
-                            </div>
-                            <span class="profile__skill-name">JS</span>
-                        </li>
-                            <!----------PYTHON--------------------->
-                        <li class="profile__skill">
-                            <div class="load-bar">
-                                <div class="load-bar__bar bar-70">70%</div>
-                            </div>
-                            <span class="profile__skill-name">PYTHON</span>
-                        </li>
-
-                             <!----------SQL--------------------->
-                        <li class="profile__skill">
-                            <div class="load-bar">
-                                <div class="load-bar__bar bar-85">85%</div>
-                            </div>
-                            <span class="profile__skill-name">SQL</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-   </main>
-   <section class="portafolio">
-    <h2 class="portafolio-title">Portafolio Section </h2>
-        <!---------Proyecto1 ---------->
-    <div class="portafolio__project-container">
-        <h2 class="portafolio__project">proyecto 1</h2>
-    </div>
-
-       <!---------Proyecto 2---------->
-       <div class="portafolio__project-container">
-        <h2 class="portafolio__project">proyecto 2</h2>
-    </div>
-       <!---------Proyecto 3 ---------->
-       <div class="portafolio__project-container">
-        <h2 class="portafolio__project">proyecto 3</h2>
-    </div>
-       <!---------Proyecto 4---------->
-       <div class="portafolio__project-container">
-        <h2 class="portafolio__project">proyecto 4</h2>
-    </div>
-       <!---------Proyecto 5---------->
-       <div class="portafolio__project-container">
-        <h2 class="portafolio__project">proyecto 5</h2>
-    </div>
-           <!---------Proyecto 6---------->
-           <div class="portafolio__project-container">
-            <h2 class="portafolio__project">proyecto 6</h2>
-        </div>
-           <!---------Proyecto 7---------->
-    
-           <div class="portafolio__project-container">
-            <h2 class="portafolio__project">proyecto 7</h2>
-        </div>
-    </div>
-    </div>
-   </section>
-   <section class="form">
-     <form action=""  class="form__form"> 
-        <h2 class="form__title">Contact</h2>
-        <div class="form__input-container">
-            <label for="">Nombre</label>
-            <input type="text" placeholder="Joe Doe">
-        </div>
-        <div class="form__input-container">
-            <label for="">Apellido</label>
-            <input type="text" placeholder="Joe Doe">
-        </div>
-        <div class="form__input-container">
-            <label for="">Email</label>
-            <input type="text" placeholder="Joe Doe">
-        </div>
-        <div class="form__input-container">
-            <label for="">Mensaje</label>
-            <textarea name="" id="" placeholder="Josias Aguilar"></textarea>
-        </div>
-        <div class="form__input-container">
-          <input type="submit" value="Enviar">
-        </div>
-   </form>
-   </section>
+</header>
   
-   <!--footer>
-        <p>Todos los derechos Reservados-2025</p>
-   </footer-->
 </body>
 </html>
