@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+.contenedor{
+    background-image: url('../subcat208-foto4-20240226053906.jpg');
+    background-repeat: no-repeat;
+}
+
+.contenedor .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #ff851b;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.contenedor .form .form-header .form-title span{
+   color:#fff ;
+
+}
+
+.contenedor .form{
+   background-color: rgb(0, 0, 0, 0.6);
+   width: 90%;
+    max-width: 650px;
+     padding: 5px 35px;
+     margin-top: 30px;
+     padding-bottom: 30px;
+     border-radius: 3px;
+     margin: 0 auto;
+}
+
+.contenedor .form .form-label{
+    display: block;
+    color: #ff851b;
+    font-size: 16px;
+    font-family: 'roboto', sans-serif;
+    position: relative;
+}
+
+.contenedor .form .form-input, .form-textarea{
+    background: rgb(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Roboto';
+}
+
+.contenedor .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.contenedor .form .btn-submit{
+    width: 100%;
+    font-family: 'roboto', sans-serif;
+    outline: none;
+    background-color: #ff851b;
+    font-size: 16px;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .5s esae;
+}
+
+.contenedor .form .btn-submit:hover{
+    background-color: #f29718;
+}

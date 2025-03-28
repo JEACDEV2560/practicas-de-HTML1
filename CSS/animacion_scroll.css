@@ -1,0 +1,35 @@
+body{
+
+    background-color: #ccc;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.crecedor{
+    height: 100vh;
+
+}
+
+.box{
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra both;
+    animation-timeline: --caajita;
+    animation-timing-function: linear;
+    animation-range: cover 20%;
+
+}
+
+
+@keyframes llenar-barra{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+        background-color: red;
+    }
+}
